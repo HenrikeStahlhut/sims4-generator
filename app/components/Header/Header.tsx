@@ -24,7 +24,7 @@ const Nav = styled.ul`
   li {
     font-weight: 700;
     :hover {
-      color: #7ba70c;
+      color: #7aa117;
     }
   }
 `;
