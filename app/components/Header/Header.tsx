@@ -1,13 +1,18 @@
 "use client";
 import styled from "styled-components";
 
-const HeaderContainer = styled.div`
-  background-color: lightblue;
-  height: 70px;
+const Logo = styled.img`
+  height: 100%;
+`;
 
+const HeaderContainer = styled.div`
+  background-color: #fff;
+  height: 100px;
+  padding: 20px 50px 20px 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 `;
 
 const Nav = styled.ul`
@@ -15,13 +20,20 @@ const Nav = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  li {
+    font-weight: 700;
+    :hover {
+      color: #7ba70c;
+    }
+  }
 `;
 
 export default function Header() {
   return (
     <>
       <HeaderContainer>
-        <h2>Logo</h2>
+        <Logo src="/logo_dummy.png" />
         <Nav>
           <li>
             <a href="/">Randomizer</a>
