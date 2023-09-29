@@ -11,6 +11,12 @@ const StyledFooter = styled.div`
   position: fixed;
   bottom: 0;
 
+  // TODO: Footer on mobile
+
+  @media (max-width: 600px) {
+    background-color: pink;
+  }
+
   ul {
     display: flex;
     flex-direction: row;
