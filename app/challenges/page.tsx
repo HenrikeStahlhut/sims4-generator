@@ -1,5 +1,4 @@
 "use client";
-import Header from "../components/Header/Header";
 import styled from "styled-components";
 import Image from "next/image";
 import ChallengesList from "../components/Challenges/Challenges";
@@ -10,6 +9,10 @@ import ContentLayout from "../components/Layout/Layout";
 
 const ChallengesIntroduction = styled.section`
   width: 50%;
+
+  h3 {
+    font-family: "Sims4Font";
+  }
 `;
 
 const IntroductionContainer = styled.div`
