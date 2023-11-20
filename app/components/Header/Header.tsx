@@ -39,7 +39,7 @@ export default function Header() {
             <a href="/">Randomizer</a>
           </li>
           <li>
-            <a href="/">Challenges</a>
+            <a href="/challenges">Challenges</a>
           </li>
           <li>
             <a href="/">About</a>

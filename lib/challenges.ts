@@ -1,3 +1,5 @@
+// ?: challenges in database?
+
 export const challenges = [
   {
     id: 1,

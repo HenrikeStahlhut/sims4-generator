@@ -3,29 +3,35 @@ import styled from "styled-components";
 import { challenges } from "@/lib/challenges";
 import Image from "next/image";
 
-const ChallengesContainer = styled.div`
+// TODO: add individual image to each challenge
+// TODO: every image same size, regarding the original image size
+
+const ChallengesListContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 `;
 
-// TODO: add individual image to each challenge
+const ChallengeDiv = styled.div`
+  width: 300px;
+  margin: 20px;
+`;
 
 export default function ChallengesList() {
   return (
-    <ChallengesContainer>
+    <ChallengesListContainer>
       {challenges.map((challenge) => (
-        <div key={challenge.id}>
+        <ChallengeDiv key={challenge.id}>
           <Image
             src={`/${challenge.image}`}
-            width={300}
-            height={300}
+            width={270}
+            height={270}
             alt={challenge.title}
           ></Image>
           <h2>{challenge.title}</h2>
           <p>{challenge.description}</p>
-        </div>
+        </ChallengeDiv>
       ))}
-    </ChallengesContainer>
+    </ChallengesListContainer>
   );
 }
