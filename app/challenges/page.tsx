@@ -8,17 +8,20 @@ import ContentLayout from "../components/Layout/Layout";
 // TODO: add loading.tsx and error, and not found page
 
 const ChallengesIntroduction = styled.section`
-  width: 50%;
+  width: 60%;
 
   h3 {
     font-family: "Sims4Font";
+    font-size: 2.5em;
+    color: #3caad6;
+    margin-bottom: 10px;
   }
 `;
 
 const IntroductionContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 20px 0px;
 `;

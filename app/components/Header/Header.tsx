@@ -22,9 +22,9 @@ const Nav = styled.ul`
   justify-content: space-between;
 
   li {
-    font-weight: 700;
+    font-family: "Sims4Font";
     :hover {
-      color: #7aa117;
+      color: #3caad6;
     }
   }
 `;
