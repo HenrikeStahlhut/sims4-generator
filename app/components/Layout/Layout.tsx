@@ -20,7 +20,25 @@ const StyledLayoutDiv = styled.div`
     width: 15%;
   }
 
+  @media only screen and (max-device-width: 850px) and (min-width: 600px) {
+    /* styles for mobile browsers smaller than 850px and bigger than 600px */
+
+    .space-left {
+      width: 10%;
+    }
+
+    .content-container {
+      width: 80%;
+    }
+
+    .space-right {
+      width: 10%;
+    }
+  }
+
   @media (max-width: 600px) {
+    /* styles for mobile browsers smaller than 600px (iPhone) */
+
     .space-left {
       width: 0;
     }

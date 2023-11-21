@@ -23,7 +23,32 @@ const IntroductionContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0px;
+  margin: 20px 0px 40px 0px;
+  gap: 50px;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+
+    .image {
+      display: none;
+    }
+  }
+`;
+
+// solution found on https://github.com/vercel/next.js/discussions/18739
+const TitleImageContainer = styled.div`
+  width: 700px;
+
+  .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+
+  @media (max-width: 1100px) {
+    width: 350px;
+  }
 `;
 
 export default function Challenges() {
@@ -40,12 +65,14 @@ export default function Challenges() {
               and maybe difficult challenges!
             </p>
           </ChallengesIntroduction>
-          <Image
-            src="/sims4-challenges.jpg"
-            width={200}
-            height={300}
-            alt="An image of three sims"
-          ></Image>
+          <TitleImageContainer>
+            <Image
+              className="image"
+              src="/sims4-challenges3.png"
+              layout="fill"
+              alt="A happy Sims4 family"
+            />
+          </TitleImageContainer>
         </IntroductionContainer>
 
         <ChallengesList />
