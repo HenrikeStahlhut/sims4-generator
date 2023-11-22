@@ -6,7 +6,6 @@ import { StyledNav } from "./Menu.styled";
 export default function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // TODO: add Profile to menu
 
   return (
     <>

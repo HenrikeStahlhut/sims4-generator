@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const StyledOpenMenuButton = styled.button<{ open: boolean }>`
   @media (max-width: 600px) {
-    /* position: ${({ open }) => (open ? "absolute" : "relative")}; */
     padding: 0;
     z-index: 2;
     background: transparent;
@@ -51,7 +50,7 @@ export const StyledNav = styled.div<{ open: boolean }>`
   }
 
   @media (max-width: 600px) {
-    background-color: #7aa117;
+    background-color: #a6c656;
     display: ${({ open }) => (open ? "flex" : "none")};
     position: absolute;
     flex-direction: column;
