@@ -91,7 +91,7 @@ export const challenges = [
     title: "Black widow challenge",
     type: "gameplay",
     description: "This is the Sims 4 Black widow challenge",
-    image: "dummy-image-challenges.jpeg",
+    image: "black-widow.png",
   },
   {
     id: 1,

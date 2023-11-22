@@ -62,18 +62,33 @@ const TypeTag = styled.div`
 `;
 
 const ChallengeImageContainer = styled.div`
-  width: 300px;
+  /* width: 300px;
   height: 200px;
+
+  > div {
+    position: unset !important;
+  }
 
   .image {
     border-radius: 15px;
     object-fit: contain;
     width: 100% !important;
-    /* height: 100% !important; */
     position: relative !important;
     height: unset !important;
+  } */
+
+  width: 300px;
+  height: 170px;
+
+  .image {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 `;
+
+// ?: maybe change img to next image
 
 export default function ChallengesList() {
   return (
@@ -82,11 +97,17 @@ export default function ChallengesList() {
         <ChallengeDiv key={index}>
           <TypeTag>{challenge.type}</TypeTag>
           <ChallengeImageContainer>
-            <Image
+            {/* <Image
               className="image"
               src={`/${challenge.image}`}
-              layout="fill"
+              fill
               alt={challenge.title}
+            /> */}
+
+            <img
+              src={`/${challenge.image}`}
+              alt="{challenge.title}"
+              className="image"
             />
           </ChallengeImageContainer>
 
