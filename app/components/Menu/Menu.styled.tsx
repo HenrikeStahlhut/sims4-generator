@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledOpenMenuButton = styled.button<{ open: boolean }>`
   @media (max-width: 600px) {
     padding: 0;
-    z-index: 2;
+    z-index: 110;
     background: transparent;
     color: ${({ open }) => (open ? "white" : "black")};
 
@@ -33,19 +33,20 @@ export const StyledOpenMenuButton = styled.button<{ open: boolean }>`
 `;
 
 export const StyledNav = styled.div<{ open: boolean }>`
-  /* overflow: hidden; */
   display: flex;
   flex-direction: row;
   justify-content: center;
+  z-index: 100;
 
   .link {
     color: black;
     text-decoration: none;
     padding: 0px 30px;
     font-size: 1.2em;
+    font-family: "Sims4Font";
 
     &:hover {
-      color: #7aa117;
+      color: #45b0da;
     }
   }
 
@@ -66,6 +67,10 @@ export const StyledNav = styled.div<{ open: boolean }>`
       padding: 30px 0px;
       font-size: 2em;
       font-weight: 500;
+
+      &:hover {
+        color: #408c29;
+      }
     }
   }
 `;

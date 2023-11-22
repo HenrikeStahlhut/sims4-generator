@@ -6,7 +6,6 @@ import { StyledNav } from "./Menu.styled";
 export default function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-
   return (
     <>
       <MenuButton open={menuOpen} setOpen={setMenuOpen} />
@@ -14,7 +13,11 @@ export default function Menu() {
         <Link href="/" className="link" onClick={() => setMenuOpen(false)}>
           Randomizer
         </Link>
-        <Link href="/" className="link" onClick={() => setMenuOpen(false)}>
+        <Link
+          href="/challenges"
+          className="link"
+          onClick={() => setMenuOpen(false)}
+        >
           Challenges
         </Link>
         <Link href="/" className="link" onClick={() => setMenuOpen(false)}>
