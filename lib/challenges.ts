@@ -27,7 +27,7 @@ export const challenges = [
     title: "Not so berry challenge",
     type: "gameplay",
     description: "This is the Sims 4 not so berry challenge",
-    image: "dummy-image-challenges.jpeg",
+    image: "not-so-berry.jpeg",
   },
   {
     id: 4,

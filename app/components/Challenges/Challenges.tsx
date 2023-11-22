@@ -48,7 +48,7 @@ const ChallengeDiv = styled.div`
 
 const TypeTag = styled.div`
   position: absolute;
-  top: 110px;
+  top: 125px;
   left: 10px;
   display: flex;
   border-radius: 15px;
@@ -58,15 +58,18 @@ const TypeTag = styled.div`
   background-color: #9edcf5;
   color: #155670;
   font-size: 13px;
+  z-index: 100;
 `;
 
 const ChallengeImageContainer = styled.div`
   width: 300px;
+  height: 200px;
 
   .image {
     border-radius: 15px;
     object-fit: contain;
     width: 100% !important;
+    /* height: 100% !important; */
     position: relative !important;
     height: unset !important;
   }
@@ -75,8 +78,8 @@ const ChallengeImageContainer = styled.div`
 export default function ChallengesList() {
   return (
     <ChallengesListContainer>
-      {challenges.map((challenge) => (
-        <ChallengeDiv key={challenge.id}>
+      {challenges.map((challenge, index) => (
+        <ChallengeDiv key={index}>
           <TypeTag>{challenge.type}</TypeTag>
           <ChallengeImageContainer>
             <Image
