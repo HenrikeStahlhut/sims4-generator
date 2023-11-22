@@ -3,30 +3,11 @@ import styled from "styled-components";
 import { challenges } from "@/lib/challenges";
 import Image from "next/image";
 
-// TODO: add individual image to each challenge
-// TODO: every image same size, regarding the original image size
-// TODO: media query for mobile
-// !: resize images
-
 const ChallengesListContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  @media only screen and (min-width: 960px) {
-    /* styles for browsers larger than 960px; */
-  }
-  @media only screen and (min-width: 1440px) {
-    /* styles for browsers larger than 1440px; */
-  }
-  @media only screen and (min-width: 2000px) {
-    /* for sumo sized (mac) screens */
-  }
-  @media only screen and (max-device-width: 600px) {
-    /* styles for mobile browsers smaller than 600px; (iPhone) */
-    justify-content: center;
-  }
 `;
 
 const ChallengeDiv = styled.div`
@@ -36,7 +17,7 @@ const ChallengeDiv = styled.div`
 
   @media only screen and (device-width: 768px) {
     /* default iPad screens */
-    width: 280px;
+    width: 17.5em;
   }
 
   h2 {
@@ -77,8 +58,11 @@ const ChallengeImageContainer = styled.div`
     height: unset !important;
   } */
 
-  width: 300px;
-  height: 170px;
+  /* width: 300px;
+  height: 170px; */
+
+  width: 18.75em;
+  height: 10.625em;
 
   .image {
     border-radius: 15px;
@@ -86,9 +70,12 @@ const ChallengeImageContainer = styled.div`
     height: 100%;
     object-fit: cover;
   }
-`;
 
-// ?: maybe change img to next image
+  @media screen and (min-width: 1000px) and (max-width: 1200px) {
+    width: 20em;
+    height: 12em;
+  }
+`;
 
 export default function ChallengesList() {
   return (
