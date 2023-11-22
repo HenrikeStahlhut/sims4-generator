@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --lightgreen: #a6c656;
+  --green: #21b96b;
+  --lightblue: #3cb9e1;
+  --blue: #4276b7;
+  --white: #fff;
+  --black: #000;
+  --tag-lightblue: #9edcf5;
+  --tag-darkblue: #155670;
+}
+
 @font-face {
   font-family: "Sims4Font";
   src: url("../public/fonts/thesimssansbold.otf") format("opentype");
