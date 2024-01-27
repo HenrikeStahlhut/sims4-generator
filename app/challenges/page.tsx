@@ -1,7 +1,7 @@
 "use client";
 import styled from "styled-components";
 import Image from "next/image";
-import ChallengesList from "../components/Challenges/Challenges";
+import ChallengesList from "../components/Challenges/ChallengesList";
 import ContentLayout from "../components/Layout/Layout";
 
 // TODO: remove use client?
@@ -57,7 +57,7 @@ export default function Challenges() {
       <ContentLayout>
         <IntroductionContainer>
           <ChallengesIntroduction>
-            <h3> Sims4 Challenges</h3>
+            <h3>Sims4 Challenges</h3>
             <p>
               If you are tired of playing the same story with your Sims all the
               time, you might want to try out some Sims 4 challenges to spice up

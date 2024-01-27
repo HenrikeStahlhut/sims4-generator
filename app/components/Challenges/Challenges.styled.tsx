@@ -5,6 +5,10 @@ export const ChallengesListContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
 `;
 
 export const ChallengeDiv = styled.div`
@@ -33,10 +37,11 @@ export const TypeTag = styled.div`
   padding: 5px 12px;
   align-items: center;
   justify-content: center;
-  background-color: #9edcf5;
-  color: #155670;
+  background-color: var(--tag-lightblue);
+  color: var(--tag-darkblue);
   font-size: 13px;
-  z-index: 100;
+  z-index: 50;
+  font-weight: bold;
 `;
 
 export const ChallengeImageContainer = styled.div`
