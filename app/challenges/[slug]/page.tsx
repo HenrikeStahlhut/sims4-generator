@@ -1,9 +1,9 @@
 "use client";
 import { challenges } from "@/lib/challenges";
 
-export default function Challenges({ params }: { params: { id: string } }) {
+export default function Challenges({ params }: { params: { slug: string } }) {
   const challenge = challenges.find(
-    (challenge) => challenge.id.toString() === params.id,
+    (challenge) => challenge.slug.toString() === params.slug,
   );
 
   if (!challenge) {
@@ -12,7 +12,7 @@ export default function Challenges({ params }: { params: { id: string } }) {
 
   return (
     <>
-      test: {params.id} {challenge.title}
+      test: {params.slug} {challenge.title}
     </>
   );
 }
