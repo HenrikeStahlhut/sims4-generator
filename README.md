@@ -9,7 +9,7 @@ A collection of Sims 4 challenges with integrated pack randomizer.
 ### Planned Features
 Since the project is still in progress, here are some features I plan to implement in the near future:
 - [ ] expansion pack randomizer
-- [ ] challenge overview
+- [x] challenge overview
 - [ ] challenge detail pages
 - [ ] challenge tracker
 - [ ] spinning wheel for color/budget challenges
