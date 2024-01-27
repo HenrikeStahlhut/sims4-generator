@@ -16,7 +16,7 @@ export default function ChallengesList() {
           <ChallengeImageContainer>
             <img
               src={`/${challenge.image}`}
-              alt="{challenge.title}"
+              alt={challenge.title}
               className="image"
             />
           </ChallengeImageContainer>
