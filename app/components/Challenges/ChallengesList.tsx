@@ -22,7 +22,7 @@ export default function ChallengesList() {
           </ChallengeImageContainer>
 
           <h2>{challenge.title}</h2>
-          <p>{challenge.description}</p>
+          <p>{challenge.teaser}</p>
         </ChallengeDiv>
       ))}
     </ChallengesListContainer>

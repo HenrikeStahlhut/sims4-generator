@@ -1,5 +1,13 @@
 "use client";
 import { challenges } from "@/lib/challenges";
+import styled from "styled-components";
+import ContentLayout from "@/app/components/Layout/Layout";
+import Image from "next/image";
+
+const ChallengeTitle = styled.h1`
+  font-family: "Sims4Font";
+  font-size: 2em;
+`;
 
 export default function Challenges({ params }: { params: { slug: string } }) {
   const challenge = challenges.find(
@@ -7,12 +15,21 @@ export default function Challenges({ params }: { params: { slug: string } }) {
   );
 
   if (!challenge) {
-    return <>not found</>;
+    return <>Challenge not found</>;
   }
 
   return (
     <>
-      test: {params.slug} {challenge.title}
+      <ContentLayout>
+        <Image
+          src="/dummy-image-challenges.jpeg"
+          width={900}
+          height={0}
+          alt="A happy Sims4 family"
+        />
+        <ChallengeTitle>{challenge.title}</ChallengeTitle>
+        <p>{challenge.description}</p>
+      </ContentLayout>
     </>
   );
 }
