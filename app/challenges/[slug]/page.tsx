@@ -22,7 +22,7 @@ export default function Challenges({ params }: { params: { slug: string } }) {
     <>
       <ContentLayout>
         <Image
-          src="/dummy-image-challenges.jpeg"
+          src={`/${challenge.image}`}
           width={900}
           height={0}
           alt="A happy Sims4 family"
